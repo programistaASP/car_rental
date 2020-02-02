@@ -1,10 +1,23 @@
 <!DOCTYPE html>
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
+
     <meta charset="UTF-8">
-    <title>Strona glowna</title>
+    <title>Strona Wypożyczalni</title>
 </head>
 <body>
+
 <h1>Witaj na stronie glownej <span th:text="${imie}"></span></h1>
+<h2>Lista samochodów</h2>
+<table>
+    <tr th:each="samochod: ${samochody}">
+        <td th:text="${samochod.marka}"/>
+        <td th:text="${samochod.model}"/>
+        <td th:text="${samochod.typNadwozia}"/>
+        <td th:text="${samochod.rocznik}"/>
+        <td th:text="${samochod.kolor}"/>
+    </tr>
+</table>
+
 </body>
 </html>

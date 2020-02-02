@@ -12,7 +12,6 @@ import org.springframework.web.bind.annotation.GetMapping;
 import javax.persistence.*;
 
 @Data
-@AllArgsConstructor
 @NoArgsConstructor
 @Entity
 public class Samochod {
@@ -34,5 +33,24 @@ public class Samochod {
 
     @Enumerated(EnumType.STRING)
     private Kolor kolor;
+
+    public Samochod( Integer id, Marka marka, Model model, TypNadwozia typNadwozia, int rocznik, Kolor kolor){
+        this.id = id;
+        this.kolor = kolor;
+        this.marka = marka;
+        this.model = model;
+        this.rocznik = rocznik;
+        this.typNadwozia = typNadwozia;
+    }
+
+    public Marka getMarka() {
+        return marka;
+    }
+
+    public void setMarka(Marka marka) {
+        this.marka = marka;
+    }
+
+
 
 }
