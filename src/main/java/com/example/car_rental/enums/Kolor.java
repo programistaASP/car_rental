@@ -13,5 +13,9 @@ public enum Kolor {
     BLEKITNY,
     TURKUSOWY,
     ROZOWY,
+    FIOLETOW,
+    GRANATOWY,
+    BEŻOWY,
+
 
 }

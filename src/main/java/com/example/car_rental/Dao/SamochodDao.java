@@ -19,7 +19,7 @@ public class SamochodDao {
     public List<Samochod> getAll() {
         List<Samochod> furki = new ArrayList<Samochod>();
         furki.add(new Samochod(null, Marka.NISSAN, Model.GTR, TypNadwozia.LIFTBACK, 2019, Kolor.CZARNY));
-        furki.add(new Samochod(null, Marka.OPEL, Model.GTR, TypNadwozia.LIFTBACK, 2019, Kolor.CZARNY));
+        furki.add(new Samochod(null, Marka.OPEL, Model.ASTRA, TypNadwozia.LIFTBACK, 1984, Kolor.BEŻOWY));
         furki.add(new Samochod(null, Marka.DODGE, Model.GTR, TypNadwozia.LIFTBACK, 2019, Kolor.CZARNY));
         furki.add(new Samochod(null, Marka.NISSAN, Model.GTR, TypNadwozia.LIFTBACK, 2019, Kolor.CZARNY));
         return furki;
